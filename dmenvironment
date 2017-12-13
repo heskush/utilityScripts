@@ -1,0 +1,10 @@
+#FOR SPARK DATA MODEL JOB
+alias dmJob="ooz -submit -config /Users/hemantkumar/MyWorkspace/datamodel/oozie/DataModelSparkJob/job.properties"
+alias putScript="hdfs dfs -put -f /Users/hemantkumar/MyWorkspace/datamodel/oozie/DataModelSparkJob/ProcessDataModelsAction.py oozie/DataModelSparkJob"
+alias showScript="hdfs dfs -text oozie/DataModelSparkJob/ProcessDataModelsAction.py"
+alias putWorkflow="hdfs dfs -put -f /Users/hemantkumar/MyWorkspace/datamodel/oozie/DataModelSparkJob/workflow.xml oozie/DataModelSparkJob"
+alias showWorkflow="hdfs dfs -text oozie/DataModelSparkJob/workflow.xml"
+alias putCoordinator="hdfs dfs -put -f /Users/hemantkumar/MyWorkspace/datamodel/oozie/DataModelSparkJob/coordinator.xml oozie/DataModelSparkJob"
+alias showCoordinator="hdfs dfs -text oozie/DataModelSparkJob/coordinator.xml"
+alias putdatasetconf="hdfs dfs -put -f /Users/hemantkumar/MyWorkspace/datamodel/resources/conf/datasetconf.json conf/"
+alias showdatasetconf="hdfs dfs -text conf/datasetconf.json"
